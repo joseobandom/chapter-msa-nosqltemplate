@@ -6,5 +6,6 @@ import com.pichincha.chaptermsanosqltemplate.service.IAccountService;
 
 @Service
 public class AccountServiceImpl implements IAccountService {
+	
 
 }

@@ -9,7 +9,7 @@ import com.pichincha.chaptermsanosqltemplate.entity.Account;
 
 public interface IAccount extends MongoRepository<Account, String>{
 	
-	@Query("{accountId:'?0'}")
+	@Query("{accountId:?0}")
     Account findAccountByAccountId(Integer accountId);
     
     //@Query(value="{category:'?0'}", fields="{'name' : 1, 'quantity' : 1}")
