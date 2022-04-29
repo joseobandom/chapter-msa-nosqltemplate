@@ -2,18 +2,19 @@ package com.pichincha.chaptermsanosqltemplate.service;
 
 import java.util.List;
 
+import com.pichincha.chaptermsanosqltemplate.dto.AccountDto;
 import com.pichincha.chaptermsanosqltemplate.entity.Account;
 
 public interface IAccountService {
 	
 
-	public List<Account> getAllAccounts();
+	public List<AccountDto> getAllAccounts();
 
-	public Account getAccountByAccountId(Integer id);
+	public AccountDto getAccountByAccountId(Integer id);
 
-	public Account createAccount(Account account);
+	public AccountDto createAccount(AccountDto account);
 
-	public Account editAccount(Account account, String id);
+	public AccountDto editAccount(AccountDto account, String id);
 
 	public void deleteAccount(String id);
 }
